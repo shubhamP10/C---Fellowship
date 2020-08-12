@@ -17,11 +17,11 @@ int main(){
 
     if (month >= 3 && month <= 6)
     {
-        int dilimit = 30 + (month % 2); 
-        if (day > 1 && day < dilimit)
+        int daysInMonth = 30 + (month % 2); 
+        if (day > 1 && day < daysInMonth)
         {
             combo = (month * 100 ) + day;
-            if (combo > 320 && combo < 620)
+            if (combo >= 320 && combo <= 620)
             {
                 result = 1;
                 st = 0;
