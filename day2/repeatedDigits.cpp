@@ -1,6 +1,4 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 
 using namespace std;
 
@@ -8,12 +6,12 @@ int main(){
     int number = 0;
     int arr[20];
 
-    for (int i = 1; i <= 100; i++)  
+    for (int i = 1; i <= 100; i++)
     {
         if (i % 11 == 0)
         {
             arr[number] = i;
-            number++; 
+            number++;
         }
     }
 
@@ -23,6 +21,5 @@ int main(){
     {
         cout << arr[i] << endl;
     }
-      
     return 0;
 }
