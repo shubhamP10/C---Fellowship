@@ -6,8 +6,6 @@ using namespace std;
 
 vector<string> fileData1; 
 vector<string> fileData2;
-vector<string> tempData;
-
 
 vector<string> readFromFile(string fileName);
 void swapAndWrite(vector<string> data1, vector<string> data2);
@@ -50,13 +48,8 @@ vector<string> readFromFile(string fileName){
 }
 
 void swapAndWrite(vector<string> data1, vector<string> data2){
-    //swap data
-    tempData = fileData1;
-    fileData1 = fileData2;
-    fileData2 = tempData;
-
-    writeToFile("file1.txt", fileData1);
-    writeToFile("file2.txt", fileData2);
+    writeToFile("file1.txt", fileData2);
+    writeToFile("file2.txt", fileData1);
 }
 
 void writeToFile(string fileName, vector<string> data){
@@ -66,6 +59,6 @@ void writeToFile(string fileName, vector<string> data){
 
     for (itr = data.begin(); itr < data.end(); itr++)
     {
-        writer << *itr << endl;
+        writer << *itr;
     }
 }
