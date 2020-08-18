@@ -7,9 +7,9 @@
          swap(list[i], list[i+1])
       end if
    end for
-   
+
    return list
-   
+
 end BubbleSort
 */
 #include <iostream>
@@ -35,7 +35,7 @@ int main(){
 
     cout << "\nAfter Sorting: " << endl;
     bubbleSort(arr, size);
-    
+
     return 0;
 }
 
@@ -46,11 +46,11 @@ void bubbleSort(int arr[], int size){
             if (arr[j] > arr[j+1]){
                 std::swap(arr[j], arr[j+1]);
                 swapped = true;
-            } 
+            }
         }
         if (swapped == false){
             break;
-        }  
+        }
     }
     printArray(arr, size);
 }
@@ -58,5 +58,5 @@ void bubbleSort(int arr[], int size){
 void printArray(int arr[], int size){
     for (int i = 0; i < size; i++){
         cout << arr[i] << " ";
-    }  
+    }
 }

@@ -21,15 +21,12 @@ int main(){
 
     cout << "\nAfter Sorting: " << endl;
     insertionSort(arr, size);
-    
+
     return 0;
 }
 
-void printArray(int arr[], int size){
-    for (int i = 0; i < size; i++){
-        cout << arr[i] << " ";
-    }  
-}
+// 13, 30, 5, 9, 14, 2
+// 5 , 13, 30,
 
 void insertionSort(int arr[], int size){
     int i , j, key;
@@ -43,4 +40,10 @@ void insertionSort(int arr[], int size){
         arr[j+1] = key;
     }
     printArray(arr, size);
+}
+
+void printArray(int arr[], int size){
+    for (int i = 0; i < size; i++){
+        cout << arr[i] << " ";
+    }
 }
