@@ -34,8 +34,6 @@ class SetEmp : Employee {
         }
 };
 
-
-
 int main() {
 
     Employee emp;
