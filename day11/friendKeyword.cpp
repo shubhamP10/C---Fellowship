@@ -12,6 +12,7 @@ class A {
         }
 
         friend class B;
+        friend void showNumOfA(A&);
 };
 
 class B {
@@ -19,13 +20,22 @@ class B {
         int number2;
     
     public:
-        void showNumberOfA(A &num){
-            cout << "A::Number1 = " << num.number1;
+        void showNumberOfA(A &num) {
+            cout << "Using Friend Class\n";
+            cout << "A::Number1 = " << num.number1 << endl;
         }
 };
 
-int main(){
+void showNumOfA(A& a) {
+    cout << "\nUsing Friend Function\n";
+    cout << "A::Number1 = " << a.number1 << endl;
+}
+
+int main() {
+
     A a;
     B b;
     b.showNumberOfA(a);
+
+    showNumOfA(a);
 }
