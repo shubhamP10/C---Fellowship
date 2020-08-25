@@ -16,9 +16,6 @@ class A {
 };
 
 class B {
-    private:
-        int number2;
-    
     public:
         void showNumberOfA(A &num) {
             cout << "Using Friend Class\n";

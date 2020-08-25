@@ -5,52 +5,65 @@ using namespace std;
 class A {
     public:
         A() {
-            display();
+           cout << "Called A()\n";
         }
+
+        A(int a){
+            cout << "A = " << a << endl;
+        }
+
         void display() {
-            cout << "Class A\n";
+            cout << "Display of A Called\n";
         }
 };
 
 class B : virtual public A {
     public:
         B() {
-            cout << "Calling A() from B()\n";
-            A();
+            cout << "calling B()\n";
+            // A();
         }
-        void callDisplay() {
-            cout << "Class B Calling Display of A\n";
-            display();
+
+        void display() {
+            cout << "Display of B\n";
         }
+        // void callDisplay() {
+        //     cout << "Class B Calling Display of A\n";
+        //     display();
+        // }
 };
 
-class C :virtual public A {
+class C : virtual public A {
     public:
         C() {
-            cout << "Calling A() from C()\n";
-            A();
+            cout << "Calling C()\n";
+            // A();
         }
 
-        void callDisplay() {
-            cout << "Class C Calling Display of A\n";
-            display();
+        void display() {
+            cout << "Display of C\n";
         }
+        // void callDisplay() {
+        //     cout << "Class C Calling Display of A\n";
+        //     display();
+        // }
 };
 
 class D : public B, public C {
     public:
-         D() {
+         D() : A(5) {
             cout << "Class D Constructor\n";
         }
 
-        void callDisplayOfA() {
-            display(); //reference to 'display' is ambiguous is solved by using Virtual Keyword.
-        }
+        // void callDisplayOfA() {
+        //     display(); //reference to 'display' is ambiguous is solved by using Virtual Keyword.
+        // }
 };
 
 
 int main() {
 
     D d;
-    d.callDisplayOfA();
+
+    d.C::display();
 }
