@@ -1,0 +1,6 @@
+#ifndef CONFIG
+#define CONFIG
+
+#cmakedefine USE_LIB
+
+#endif // CONFIG

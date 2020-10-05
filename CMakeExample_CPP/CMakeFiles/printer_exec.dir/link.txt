@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/printer_exec.dir/Main.cpp.o CMakeFiles/printer_exec.dir/Printer/source/Printer.cpp.o CMakeFiles/printer_exec.dir/Reader/source/Reader.cpp.o  -o printer_exec  addition/libaddition.a 

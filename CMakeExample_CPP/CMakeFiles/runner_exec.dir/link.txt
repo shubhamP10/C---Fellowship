@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/runner_exec.dir/Runner.cpp.o CMakeFiles/runner_exec.dir/Printer/source/Printer.cpp.o CMakeFiles/runner_exec.dir/Reader/source/Reader.cpp.o  -o runner_exec 

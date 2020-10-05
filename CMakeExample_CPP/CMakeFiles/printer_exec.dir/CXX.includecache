@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shubham/Desktop/Fellowship/CMakeExample_CPP/Main.cpp
+any
+-
+Printer.h
+/home/shubham/Desktop/Fellowship/CMakeExample_CPP/Printer.h
+Reader.h
+/home/shubham/Desktop/Fellowship/CMakeExample_CPP/Reader.h
+PrinterConfig.h
+/home/shubham/Desktop/Fellowship/CMakeExample_CPP/PrinterConfig.h
+cassert
+-
+addition.h
+/home/shubham/Desktop/Fellowship/CMakeExample_CPP/addition.h
+
+/home/shubham/Desktop/Fellowship/CMakeExample_CPP/Printer/source/Printer.cpp
+Printer.h
+/home/shubham/Desktop/Fellowship/CMakeExample_CPP/Printer/source/Printer.h
+
+/home/shubham/Desktop/Fellowship/CMakeExample_CPP/PrinterConfig.h
+
+/home/shubham/Desktop/Fellowship/CMakeExample_CPP/Reader/source/Reader.cpp
+Reader.h
+/home/shubham/Desktop/Fellowship/CMakeExample_CPP/Reader/source/Reader.h
+
+Printer/include/Printer.h
+iostream
+-
+
+Reader/include/Reader.h
+iostream
+-
+
+addition/addition.h
+iostream
+-
+
