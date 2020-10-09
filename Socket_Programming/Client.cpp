@@ -23,7 +23,6 @@ void sendMsgs(int sock) {
 	}
 }
 
-
 void recvMsgs(int sock) {
 	int valread = 0;
 	char buffer[1024] = {0}; 
